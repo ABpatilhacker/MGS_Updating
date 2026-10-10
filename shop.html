@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore Microsoft software licence options and SSD storage products from Mercury Global Systems.">
+  <title>Shop | Mercury Global Systems</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/mgs-favicon.svg">
+  <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/storefront.css">
+  <script src="js/main.js" defer></script><script src="js/catalog.js" defer></script><script src="js/storefront.js" defer></script>
+</head><body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="index.html" aria-label="Mercury Global Systems home">
+      <img class="logo-image" src="assets/images/mgs-logo.svg" alt="Mercury Global Systems logo">
+      <span class="brand-name"><span class="brand-initial">M</span>ercury <span class="brand-initial">G</span>lobal <span class="brand-initial">S</span>ystems</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" aria-label="Primary navigation"><a href="index.html">Home</a><a href="shop.html" class="active">Shop</a><a href="services.html">Services</a><a href="ventures.html">Ventures</a><a href="about.html">About Us</a><a href="contact.html">Contact</a></nav>
+    <div class="header-utilities"><a class="utility-link basket-link" href="cart.html" aria-label="Shopping basket">Basket <span class="cart-count" data-cart-count>0</span></a><a class="utility-link account-link" href="login.html" data-header-account>Sign in</a></div>
+  </div>
+</header>
+<main>
+<section class="section shop-section"><div class="container">
+    <div class="shop-page-intro"><div><div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Shop</span></div><h1>Shop software &amp; storage</h1><p data-shop-intro>Compare Microsoft licence options and storage capacities. Select a product to review details.</p></div><a class="shop-help-link" href="contact.html">Need a quote? Contact MGS <span aria-hidden="true">→</span></a></div>
+    <div class="shop-toolbar"><div class="shop-search-wrap"><label class="sr-only" for="shop-search">Search products</label><input class="search-box" id="shop-search" type="search" placeholder="Search software, capacity or form factor…" data-shop-search><span class="search-symbol" aria-hidden="true">⌕</span></div><label class="currency-control" for="currency-select">Display currency <select id="currency-select" data-currency-select><option value="EUR">EUR (€)</option><option value="INR">INR (₹)</option></select></label></div>
+    <div class="category-shortcuts"><a href="licenses.html"><span class="shortcut-icon">▦</span><span><strong>Microsoft Licenses</strong><small>Windows and Office products</small></span><span aria-hidden="true">→</span></a><a href="storage.html"><span class="shortcut-icon">▤</span><span><strong>Storage</strong><small>SATA and M.2 NVMe SSDs</small></span><span aria-hidden="true">→</span></a></div>
+    <div class="shop-section-heading" id="licenses"><div><span class="eyebrow">Software catalogue</span><h2>Microsoft Licenses</h2><p>Edition, activation method and licence rights are SKU-specific. Review the product details before requesting a quote.</p></div><span class="result-count" data-count-software>12 products</span></div>
+    <div class="product-grid" id="software-grid" data-grid="software" aria-live="polite"></div>
+    <div class="shop-section-heading storage-heading" id="storage"><div><span class="eyebrow">Hardware catalogue</span><h2>Storage</h2><p>Choose your capacity and confirm compatibility with the device you plan to upgrade.</p></div><span class="result-count" data-count-storage>10 options</span></div>
+    <div class="storage-subheading"><h3>2.5-inch SATA SSD</h3><p>For systems supporting a 2.5-inch SATA drive.</p></div><div class="product-grid" id="sata-grid" data-grid="storage-sata" aria-live="polite"></div>
+    <div class="storage-subheading"><h3>M.2 NVMe PCIe 3.0 2280</h3><p>Confirm NVMe/PCIe support and M.2 2280 fit before ordering.</p></div><div class="product-grid" id="nvme-grid" data-grid="storage-nvme" aria-live="polite"></div>
+    <div class="storage-subheading" id="other-storage-heading" hidden><h3>Other storage options</h3><p>Additional storage listings managed by MGS.</p></div><div class="product-grid" id="other-storage-grid" data-grid="storage-other" aria-live="polite"></div>
+    <div class="catalog-note"><strong>Clear product information, no guessed specs.</strong><p>Images are representative. Package contents, compatibility, performance, warranty and licence terms are confirmed against the specific SKU supplied by MGS.</p><a href="terms-licenses.html">Read the software licence notes →</a></div>
+  </div></section>
+</main>
+<div class="modal-backdrop" data-product-modal hidden><section class="product-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button type="button" class="modal-close" data-modal-close aria-label="Close product details">×</button><div data-modal-content></div></section></div>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand"><a class="logo" href="index.html"><img class="logo-image" src="assets/images/mgs-logo.svg" alt="Mercury Global Systems logo"><span class="brand-name"><span class="brand-initial">M</span>ercury <span class="brand-initial">G</span>lobal <span class="brand-initial">S</span>ystems</span></a><p data-footer-tagline>Enterprise technology built for the real world.</p></div>
+    <div><h3 class="footer-title">Navigate</h3><div class="footer-links"><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="services.html">Services</a><a href="ventures.html">Ventures</a><a href="about.html">About Us</a><a href="contact.html">Contact</a></div></div>
+    <div><h3 class="footer-title">Shop</h3><div class="footer-links"><a href="licenses.html">Microsoft Licenses</a><a href="storage.html">Storage</a><a href="terms-licenses.html">Licence Terms &amp; Conditions</a><a href="cart.html">Basket</a></div></div>
+    <div><h3 class="footer-title">Support</h3><div class="footer-links"><a href="contact.html">Contact Us</a><a href="mailto:info@mercuryglobalsystems.com">info@mercuryglobalsystems.com</a></div></div>
+  </div>
+  <div class="container footer-bottom"><span>© 2026 Mercury Global Systems</span><span>Product details and licence terms are SKU-specific.</span></div>
+</footer>
+</body></html>

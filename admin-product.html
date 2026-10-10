@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Edit an MGS catalogue product in the local storefront preview.">
+  <title>Edit product | Mercury Global Systems</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/mgs-favicon.svg">
+  <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/storefront.css">
+  <script src="js/main.js" defer></script><script src="js/catalog.js" defer></script><script src="js/storefront.js" defer></script>
+</head>
+<body>
+<header class="site-header"><div class="container nav-wrap">
+  <a class="logo" href="index.html" aria-label="Mercury Global Systems home"><img class="logo-image" src="assets/images/mgs-logo.svg" alt="Mercury Global Systems logo"><span class="brand-name"><span class="brand-initial">M</span>ercury <span class="brand-initial">G</span>lobal <span class="brand-initial">S</span>ystems</span></a>
+  <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+  <nav class="nav-links" aria-label="Primary navigation"><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="services.html">Services</a><a href="ventures.html">Ventures</a><a href="about.html">About Us</a><a href="contact.html">Contact</a></nav>
+  <div class="header-utilities"><a class="utility-link basket-link" href="cart.html" aria-label="Shopping basket">Basket <span class="cart-count" data-cart-count>0</span></a><a class="utility-link account-link" href="login.html" data-header-account>Sign in</a></div>
+</div></header>
+<main>
+  <section class="page-hero"><div class="container"><div class="breadcrumb"><a href="admin.html">Store management</a><span>/</span><span data-editor-breadcrumb>Product editor</span></div><span class="eyebrow">Catalogue editor</span><h1 data-editor-heading>Edit product</h1><p>Review and edit every catalogue field. Changes are local to this browser preview until a secured backend is connected.</p></div></section>
+  <section class="section"><div class="container admin-editor-page">
+    <div class="notice notice-warning" data-admin-security-notice><strong>Local preview only.</strong> Do not rely on this browser editor for live prices or production catalogue changes. Server-side admin authentication and database persistence must be configured before public launch.</div>
+    <form class="admin-product-form" data-admin-product-form>
+      <div class="admin-editor-top"><div class="admin-editor-image"><img data-editor-image src="assets/images/products/windows-license.jpg" alt="Product preview"><p class="muted-small">Preview image</p></div><div class="admin-editor-fields"><h2>Product information</h2><p class="muted-small">Product ID stays fixed to avoid breaking basket links and order records.</p><div class="form-grid">
+        <div class="form-field"><label for="product-id">Product ID</label><input id="product-id" name="id" readonly></div>
+        <div class="form-field"><label for="product-title">Display name *</label><input id="product-title" name="title" required></div>
+        <div class="form-field"><label for="product-category">Category *</label><select id="product-category" name="category" required><option value="software">Microsoft Licenses</option><option value="storage">Storage</option></select></div>
+        <div class="form-field"><label for="product-group">Collection / group</label><input id="product-group" name="group"></div>
+        <div class="form-field"><label for="product-badge">Badge</label><input id="product-badge" name="badge"></div>
+        <div class="form-field"><label for="product-image">Image path or URL</label><input id="product-image" name="image" required></div>
+        <div class="form-field full"><label for="product-short">Card summary *</label><textarea id="product-short" name="short" rows="2" required></textarea></div>
+        <div class="form-field full"><label for="product-description">Full product description *</label><textarea id="product-description" name="description" rows="6" required></textarea></div>
+        <div class="form-field full"><label for="product-highlights">Highlights (one per line)</label><textarea id="product-highlights" name="highlights" rows="4"></textarea></div>
+        <div class="form-field full"><label for="product-note">Licence / compatibility / specification note</label><textarea id="product-note" name="licenseNote" rows="3"></textarea></div>
+        <div class="form-field"><label for="product-source-url">Reference URL</label><input id="product-source-url" name="sourceUrl" type="url"></div>
+        <div class="form-field"><label for="product-source-label">Reference label</label><input id="product-source-label" name="sourceLabel"></div>
+        <div class="form-field"><label for="product-price-eur">Price in EUR (€)</label><input id="product-price-eur" name="priceEUR" type="number" min="0" step="0.01" inputmode="decimal" placeholder="Leave blank for quote"></div>
+        <div class="form-field"><label for="product-price-inr">Price in INR (₹)</label><input id="product-price-inr" name="priceINR" type="number" min="0" step="0.01" inputmode="decimal" placeholder="Leave blank for quote"></div>
+      </div><label class="admin-visibility"><input type="checkbox" name="active"> <span><strong>Show this product in the shop</strong><small>Uncheck to hide it from the storefront without deleting it.</small></span></label></div></div>
+      <div class="admin-editor-actions"><a class="btn btn-light" href="admin.html">Cancel</a><button class="btn btn-blue" type="submit">Save product changes</button></div><p class="form-status" data-product-editor-status role="status"></p>
+    </form>
+  </div></section>
+</main>
+<footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><a class="logo" href="index.html"><img class="logo-image" src="assets/images/mgs-logo.svg" alt="Mercury Global Systems logo"><span class="brand-name"><span class="brand-initial">M</span>ercury <span class="brand-initial">G</span>lobal <span class="brand-initial">S</span>ystems</span></a><p data-footer-tagline>Enterprise technology built for the real world.</p></div><div><h3 class="footer-title">Navigate</h3><div class="footer-links"><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="services.html">Services</a><a href="ventures.html">Ventures</a><a href="about.html">About Us</a><a href="contact.html">Contact</a></div></div><div><h3 class="footer-title">Shop</h3><div class="footer-links"><a href="licenses.html">Microsoft Licenses</a><a href="storage.html">Storage</a><a href="terms-licenses.html">Licence Terms &amp; Conditions</a><a href="cart.html">Basket</a></div></div><div><h3 class="footer-title">Support</h3><div class="footer-links"><a href="contact.html">Contact Us</a><a href="mailto:info@mercuryglobalsystems.com">info@mercuryglobalsystems.com</a></div></div></div><div class="container footer-bottom"><span>© 2026 Mercury Global Systems</span><span>Product details and licence terms are SKU-specific.</span></div></footer>
+</body></html>
